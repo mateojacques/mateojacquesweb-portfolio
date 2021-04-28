@@ -1,0 +1,410 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#nav {
+  width: 100%;
+  position: static;
+  padding: 40px 40px 40px 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px solid #0a1c56;
+
+  .logo {
+    font-size: 1rem;
+  }
+
+  ul {
+    width: 30%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  ul li a {
+    color: #8d8d8d;
+    text-decoration: none;
+    margin-right: 70px;
+  }
+}
+
+#nav-mobile {
+  display: none;
+}
+
+//ABOUT PAGE
+#about-main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  .about-info {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+
+    > div {
+      text-align: center;
+      width: 50%;
+
+      .title {
+        font-size: 3rem;
+        letter-spacing: 5px;
+        margin-bottom: 35px;
+      }
+
+      p {
+        font-size: 1.3rem;
+        letter-spacing: 2px;
+        margin-bottom: 50px;
+      }
+    }
+  }
+
+  .read-more {
+    display: inline-block;
+    margin: 130px auto 0 auto;
+
+    i {
+      transform: scale(2);
+      color: #0a1c56;
+    }
+  }
+}
+
+#more {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 0;
+
+  .about-item {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 30px;
+
+    h3 {
+      font-size: 1.5rem;
+    }
+
+    i {
+      font-size: 1.5rem;
+      margin-right: 10px;
+      transform: rotate(-90deg);
+    }
+  }
+
+  .item-info {
+    width: 100%;
+    height: 0px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 30px;
+
+    > div {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 50px;
+
+      h4 {
+        color: #8d8d8d;
+        margin-bottom: 20px;
+        font-weight: 300;
+      }
+
+      ul {
+        list-style: none;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+
+        li {
+          margin-right: 40px;
+          font-weight: 500;
+        }
+      }
+    }
+
+    p {
+      width: 50%;
+    }
+  }
+}
+
+//DESIGN PAGE
+#design-main, #development-main{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  p{
+    font-size: 1.6rem;
+    letter-spacing: .05rem;
+    margin-bottom: 100px;
+    text-align: center;
+  }
+
+  .read-more{
+    font-size: 2rem;
+    margin-top: 100px;
+  }
+}
+
+#development-main .read-more{
+  margin-top: 0;
+}
+
+#work{
+  p{
+    margin-top: 10px;
+    color: #8d8d8d;
+  }
+
+  .design-section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 100px auto;
+
+    h2{
+      color: #8d8d8d;
+      margin-bottom: 40px;
+    }
+
+    > div{
+      width: 100%;
+      display: grid;
+      grid-row-gap: 100px;
+      align-items: center;
+
+      >div{
+        width: auto;
+        text-align: center;
+        margin-top: 30px;
+
+        h3{
+          margin-top: 30px;
+          letter-spacing: 2px;
+        }
+        
+        img{
+          max-width: 300px;
+        }
+
+        .img-large{
+          max-width: 400px;
+        }
+      }
+    }
+
+    #design-logos{
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    #design-ui{
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  //ABOUT PAGE
+  #about-main {
+    .about-info {
+      width: 100%;
+
+      img {
+        transform: scale(0.9);
+      }
+    }
+  }
+
+  #more .item-info p{
+    width: 70%;
+  }
+
+  //DESIGN PAGE
+  #work .design-section{
+    #design-logos{
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    #design-ui{
+      grid-template-columns: repeat(2, 1fr);
+    }
+  } 
+}
+
+@media screen and (max-width: 1024px) {
+  #nav {
+    padding-right: 10px;
+  }
+
+  //ABOUT PAGE
+  #about-main {
+    .about-info {
+      > div {
+        .title {
+          font-size: 2.5rem;
+        }
+
+        p {
+          margin-bottom: 30px;
+        }
+      }
+
+      img {
+        transform: scale(1);
+        width: 400px;
+        height: auto;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #nav {
+    padding: 40px;
+
+    > ul {
+      display: none;
+    }
+  }
+
+  #nav-mobile {
+    display: flex;
+    justify-content: flex-end;
+
+    .nav-open {
+      color: #0a1c56;
+      font-size: 1.4rem;
+    }
+
+    .nav-menu {
+      width: 100vw;
+      height: 0px;
+      padding: 0px;
+      display: flex;
+      flex-direction: column;
+      background-color: #0a1c56;
+      transition: 1s;
+      position: fixed;
+      top: 100px;
+      left: 0;
+      overflow: hidden;
+
+      li a {
+        font-weight: 500;
+      }
+
+      ul {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .nav-close {
+        border: none;
+        background: none;
+        color: #fff;
+        font-weight: bold;
+        font-size: 1.3rem;
+        margin-left: auto;
+      }
+    }
+  }
+
+  //ABOUT PAGE
+  #about-main {
+    .about-info {
+      flex-direction: column;
+      padding: 40px 0;
+
+      > div {
+        width: 100%;
+        margin-bottom: 50px;
+
+        p {
+          margin-bottom: 50px;
+        }
+      }
+    }
+
+    .read-more {
+      margin-top: 40px;
+    }
+  }
+
+  #more .item-info p{
+    width: 100%;
+  }
+
+  //DESIGN PAGE
+  #work .design-section{
+    #design-logos{
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    #design-ui{
+      grid-template-columns: repeat(1, 1fr);
+    }
+  } 
+}
+
+@media screen and (max-width: 500px){
+  //ABOUT PAGE
+  #about-main .about-info{
+    img{
+      width: 100%;
+    }
+  }
+
+  #more .item-info ul li{
+    margin-bottom: 15px;
+  }
+
+  //DESIGN PAGE
+  #design-main{
+    p{
+      font-size: 1rem;
+      margin-bottom: 30px;
+    }
+  }
+
+  #work{
+    .design-section{
+      > div > div img{
+        max-width: 200px;
+      }
+
+      h2{
+         margin: 0 auto;
+       margin-bottom: 70px;
+      }
+
+
+      #design-logos{
+        grid-template-columns: 1fr;
+      }
+  
+      #design-ui{
+        img{
+          width: 100%;
+        }
+      }
+    } 
+  } 
+}

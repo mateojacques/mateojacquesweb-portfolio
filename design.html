@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/info.css" />
+    <style></style>
+    <title>My design career</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav id="nav">
+        <a href="/" class="logo"
+          ><h1>.mateojacquesweb</h1></a
+        >
+
+        <ul>
+          <li>
+            <a href="about.html">about</a>
+          </li>
+          <li>
+            <a style="color: #0a1c56; font-weight: 700" href="#">design</a>
+          </li>
+          <li><a href="development.html">development</a></li>
+          <li><a href="contact.html">contact</a></li>
+        </ul>
+
+        <nav id="nav-mobile" class="nav">
+          <i class="fas fa-bars nav-open"></i>
+
+          <div class="nav-menu">
+            <ul>
+              <li class="nav-link">
+                <a href="about.html">about</a>
+              </li>
+              <li class="nav-link">
+                <a style="color: #fff; font-weight: 700" href="#">design</a>
+              </li>
+              <li class="nav-link">
+                <a href="development.html">development</a>
+              </li>
+              <li class="nav-link">
+                <a href="contact.html">contact</a>
+              </li>
+            </ul>
+
+            <i class="fas fa-arrow-up nav-close"></i>
+          </div>
+        </nav>
+      </nav>
+
+      <main class="section" id="design-main">
+        <p>
+          Since I was a kid, I learn design concepts. I picked up
+          <b>Adobe Photoshop</b> at the age of nine, when I would produce
+          content for my websites and Facebook pages. I learned about the
+          difference between bpm and png, the concept of renders and vectors and
+          how to combine the best of both worlds to create what, at that time,
+          seemed like a beautiful clean banner to me.
+        </p>
+
+        <p>
+          Later, when I grew up, I got my first job designing and assembling
+          stamps. I picked up <b>Corel Draw</b> and used it for nearly 3 years.
+          It was a great and valuable learning experience, but it wasn't as
+          aestethically pleasing as I would want to.
+        </p>
+
+        <p>
+          Now, after a long run, I got into Web Design. I've made myself
+          comfortable in <b>Adobe XD</b> and <b>Figma</b>, and know my way
+          around <b>Adobe Illustrator</b>.
+        </p>
+
+        <a class="read-more" onclick="smoothScroll(work)"
+          ><i class="fas fa-chevron-down"></i
+        ></a>
+      </main>
+
+      <section class="section" id="work">
+        <h1 class="title">Featured work</h1>
+        <p>(from oldest to newest)</p>
+
+        <div class="design-section">
+          <h2>LOGOS</h2>
+
+          <div class="design-section-items" id="design-logos">
+            <div>
+              <img src="img/sharegold.png" alt="Sharegold Logo" />
+              <h3>SHAREGOLD</h3>
+              <p>Twitch channel</p>
+            </div>
+
+            <div>
+              <img src="img/tidi.png" alt="TIDI Logo" />
+              <h3>TIDI</h3>
+              <p>Web application</p>
+            </div>
+
+            <div>
+              <img src="img/atiempo.png" alt="Atiempo Logo" />
+              <h3>ATIEMPO</h3>
+              <p>Messenger service</p>
+            </div>
+
+            <div>
+              <img src="img/mateojacquesweb.png" alt="My Logo" />
+              <h3>MATEOJACQUESWEB</h3>
+              <p>My own logo</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="design-section">
+          <h2>USER INTERFACES</h2>
+
+          <div class="design-section-items" id="design-ui">
+            <div>
+              <img class="img-large" src="img/spurs.png" alt="Spurs Buenos Aires" />
+              <h3>SPURS BUENOS AIRES</h3>
+              <p>Informational website</p>
+            </div>
+
+            <div>
+              <img class="img-large" src="img/mockapp.png" alt="Mockapp" />
+              <h3>MOCKAPP</h3>
+              <p>Landing page</p>
+            </div>
+
+            <div>
+              <img class="img-large" src="img/portfolio.png" alt="My portfolio" />
+              <h3>MATEOJACQUESWEB</h3>
+              <p>Digital portfolio</p>
+            </div>
+          </div>
+      </section>
+
+      <footer id="footer">
+        <div class="contact-links">
+          <a href="https://github.com/mateojacques" target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a href="https://linkedin.com/in/mateoleonjacques" target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a href="https://facebook.com/mateojacques.dev" target="_blank"
+            ><i class="fab fa-facebook"></i
+          ></a>
+          <a href="https://instagram.com/mateojacquesweb" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </div>
+
+        <a href="/"><h4>.mateojacquesweb</h4></a>
+      </footer>
+    </div>
+
+    <script src="js/scroll.js"></script>
+    <script src="js/dropdown.js"></script>
+    <script src="js/mobile-menu.js"></script>
+  </body>
+</html>

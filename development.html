@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/info.css" />
+    <style></style>
+    <title>My development career</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav id="nav">
+        <a href="/" class="logo"
+          ><h1>.mateojacquesweb</h1></a
+        >
+
+        <ul>
+          <li>
+            <a href="about.html">about</a>
+          </li>
+          <li>
+            <a href="design.html">design</a>
+          </li>
+          <li>
+            <a style="color: #0a1c56; font-weight: 700" href="development.html"
+              >development</a
+            >
+          </li>
+          <li><a href="contact.html">contact</a></li>
+        </ul>
+
+        <nav id="nav-mobile" class="nav">
+          <i class="fas fa-bars nav-open"></i>
+
+          <div class="nav-menu">
+            <ul>
+              <li class="nav-link">
+                <a href="about.html">about</a>
+              </li>
+              <li class="nav-link">
+                <a href="#">design</a>
+              </li>
+              <li class="nav-link">
+                <a style="color: #fff; font-weight: 700" href="development.html"
+                  >development</a
+                >
+              </li>
+              <li class="nav-link">
+                <a href="contact.html">contact</a>
+              </li>
+            </ul>
+
+            <i class="fas fa-arrow-up nav-close"></i>
+          </div>
+        </nav>
+      </nav>
+
+      <main class="section" id="development-main">
+        <p>
+          I always knew I would end up being a programmer. I picked up my first
+          computer when I was 4 and instantly fell in love with it. That, in
+          addition to a need for creating things and knowing how they are made
+          and work, gave shape to my passion for coding.
+        </p>
+
+        <p>
+          I tried a wide variety of languages and paths, but ultimately decided
+          to go for the Web Development route of programming. I felt like it
+          combined aesthetics and problem-solving in a way that just made a lot
+          of sense for me to choose it.
+        </p>
+
+        <p>
+          I picked up <b>HTML</b>, <b>CSS</b> and <b>JavaScript</b>, and then
+          dived into frameworks and libraries that just make things more and
+          more interesting as I go. I just won't get tired of learning this
+          stuff.
+        </p>
+
+        <p>
+          I've been developing web sites and applications since 2019, never
+          being afraid to evolve, ask questions, recognize mistakes, and fix
+          them.
+        </p>
+
+        <a class="read-more" onclick="smoothScroll(projects)"
+          ><i class="fas fa-chevron-down"></i
+        ></a>
+      </main>
+
+      <section class="section" id="projects">
+        <a href="https://www.github.com/mateojacques" target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
+
+        <h1 class="title">Featured Work</h1>
+        <p style="color: #8d8d8d">(in order of relevancy)</p>
+
+        <div class="project-box">
+          <a
+            class="project-box__img"
+            href="http://gayo-football-app.netlify.app"
+            target="_blank"
+            ><img src="img/gayo.png" alt="Gayo Football App"
+          /></a>
+          <div class="project-box__info">
+            <h2 class="project-info__title">GAYO FOOTBALL APP</h2>
+            <p class="project-info__desc">
+              Gayo lets you see the highlights of the latest matches in Europe's
+              five main football leagues.
+              <br />It uses the <span> Fetch API </span> to display information
+              from a public API (ScoreBat).
+            </p>
+            <p class="project-info__features">features...</p>
+            <ul class="project-info__list">
+              <li>HTML</li>
+              <li>BOOTSTRAP</li>
+              <li>JAVASCRIPT</li>
+              <li>FETCH API</li>
+            </ul>
+
+            <div class="project-info__links">
+              <a
+                href="https://github.com/mateojacques/gayo-football-app"
+                target="_blank"
+                >PROJECT SOURCE</a
+              >
+              <a href="https://gayo-football-app.netlify.app" target="_blank"
+                >VISIT SITE</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="project-box">
+          <div class="project-box__info">
+            <h2 class="project-info__title">MOCKAPP</h2>
+            <p class="project-info__desc">
+              <span> Landing page </span>of a fake application.<br />
+              It features <b>animation</b> of svg elements and
+              <b>smooth transitions</b> done with JavaScript and GSAP library.
+            </p>
+            <p class="project-info__features">features...</p>
+            <ul class="project-info__list">
+              <li>HTML</li>
+              <li>CSS (SASS)</li>
+              <li>JAVASCRIPT</li>
+              <li>GSAP</li>
+            </ul>
+
+            <div class="project-info__links">
+              <a href="https://github.com/mateojacques/mockapp" target="_blank"
+                >PROJECT SOURCE</a
+              >
+              <a href="https://mockapp.netlify.app" target="_blank"
+                >VISIT SITE</a
+              >
+            </div>
+          </div>
+
+          <a
+            class="project-box__img img-right img-below"
+            href="http://mockapp.netlify.app"
+            target="_blank"
+            ><img src="img/mockapp.png" alt="Mockapp"
+          /></a>
+        </div>
+
+        <hr />
+
+        <div class="project-box">
+          <a
+            class="project-box__img"
+            href="http://shia-just-do-it.netlify.app"
+            target="_blank"
+            ><img src="img/shia.png" alt="Shia Just Do It"
+          /></a>
+          <div class="project-box__info">
+            <h2 class="project-info__title">SHIA</h2>
+            <p class="project-info__desc">
+              SHIA is a Vanilla JS To Do App with a fun little twist.<br />
+              It's a <span> CRUD app</span>, it utilizes <b>Local Storage</b> to
+              store the values for the user.
+            </p>
+            <p class="project-info__features">features...</p>
+            <ul class="project-info__list">
+              <li>HTML</li>
+              <li>BOOTSTRAP</li>
+              <li>JAVASCRIPT</li>
+            </ul>
+
+            <div class="project-info__links">
+              <a
+                href="https://github.com/mateojacques/shia-just-do-it"
+                target="_blank"
+                >PROJECT SOURCE</a
+              >
+              <a href="https://shia-just-do-it.netlify.app" target="_blank"
+                >VISIT SITE</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="project-box">
+          <div class="project-box__info">
+            <h2 class="project-info__title">Paper Clone</h2>
+            <p class="project-info__desc">
+              Dropbox Paper <span>UI Clone</span>.<br />
+              I do not own the design of this website in any form. This is just
+              a re-do of an existing UI for non-commercial purposes. <br />It's
+              just to showcase my ability to
+              <b>translate layout designs into actual websites</b>.
+            </p>
+            <p class="project-info__features">features...</p>
+            <ul class="project-info__list">
+              <li>HTML</li>
+              <li>CSS (SASS)</li>
+              <li>JAVASCRIPT</li>
+            </ul>
+
+            <div class="project-info__links">
+              <a
+                href="https://github.com/mateojacques/paper-clone"
+                target="_blank"
+                >PROJECT SOURCE</a
+              >
+              <a href="https://paper-clone.netlify.app" target="_blank"
+                >VISIT SITE</a
+              >
+            </div>
+          </div>
+
+          <a
+            class="project-box__img img-right img-below"
+            href="http://paper-clone.netlify.app"
+            target="_blank"
+            ><img src="img/paper.png" alt="Paper Clone"
+          /></a>
+        </div>
+
+        <hr />
+
+        <div class="project-box">
+          <a
+            class="project-box__img"
+            href="http://spursbuenosaires.netlify.app"
+            target="_blank"
+            ><img src="img/spurs.png" alt="Spurs Buenos Aires"
+          /></a>
+          <div class="project-box__info">
+            <h2 class="project-info__title">SPURS BUENOS AIRES</h2>
+            <p class="project-info__desc">
+              Website for the Tottenham Hotspur's Official Supporters Club in
+              Buenos Aires.<br />
+              It is an <span> informational website</span> whose only goal is to
+              introduce the users to a football club.
+            </p>
+            <p class="project-info__features">features...</p>
+            <ul class="project-info__list">
+              <li>HTML</li>
+              <li>CSS (SASS)</li>
+              <li>JAVASCRIPT</li>
+              <li>GSAP</li>
+            </ul>
+
+            <div class="project-info__links">
+              <a
+                href="https://github.com/mateojacques/spursbuenosaires"
+                target="_blank"
+                >PROJECT SOURCE</a
+              >
+              <a href="https://spursbuenosaires.netlify.app" target="_blank"
+                >VISIT SITE</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="project-box">
+          <div class="project-box__info">
+            <h2 class="project-info__title">LIBRERIA SAN PABLO</h2>
+            <p class="project-info__desc">
+              <span>Informational website</span> for a local bookshop called Librería San
+              Pablo.<br />
+              It features a <b>form</b> that calculates the cost of a stamp based in
+              the input from the user, and then generates a payment link to buy
+              it.
+            </p>
+            <p class="project-info__features">features...</p>
+            <ul class="project-info__list">
+              <li>HTML</li>
+              <li>CSS (SASS)</li>
+              <li>JAVASCRIPT</li>
+            </ul>
+
+            <div class="project-info__links">
+              <a
+                href="https://github.com/mateojacques/libreria-sanpablo"
+                target="_blank"
+                >PROJECT SOURCE</a
+              >
+              <a href="https://libreria-sanpablo.netlify.app" target="_blank"
+                >VISIT SITE</a
+              >
+            </div>
+          </div>
+
+          <a
+            class="project-box__img img-right img-below"
+            href="http://libreria-sanpablo.netlify.app"
+            target="_blank"
+            ><img src="img/sanpablo.png" alt="Libreria San Pablo"
+          /></a>
+        </div>
+      </section>
+
+      <footer id="footer">
+        <div class="contact-links">
+          <a href="https://github.com/mateojacques" target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a href="https://linkedin.com/in/mateoleonjacques" target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a href="https://facebook.com/mateojacques.dev" target="_blank"
+            ><i class="fab fa-facebook"></i
+          ></a>
+          <a href="https://instagram.com/mateojacquesweb" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </div>
+
+        <a href="/"><h4>.mateojacquesweb</h4></a>
+      </footer>
+    </div>
+
+    <script src="js/scroll.js"></script>
+    <script src="js/dropdown.js"></script>
+    <script src="js/mobile-menu.js"></script>
+  </body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/info.css" />
+    <style></style>
+    <title>About me</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav id="nav">
+        <a href="/" class="logo"
+          ><h1>.mateojacquesweb</h1></a
+        >
+
+        <ul>
+          <li>
+            <a style="color: #0a1c56; font-weight: 700" href="#">about</a>
+          </li>
+          <li><a href="design.html">design</a></li>
+          <li><a href="development.html">development</a></li>
+          <li><a href="contact.html">contact</a></li>
+        </ul>
+
+        <nav id="nav-mobile" class="nav">
+          <i class="fas fa-bars nav-open"></i>
+
+          <div class="nav-menu">
+            <ul>
+              <li class="nav-link">
+                <a style="color: #fff; font-weight: 700" href="#">about</a>
+              </li>
+              <li class="nav-link">
+                <a href="design.html">design</a>
+              </li>
+              <li class="nav-link">
+                <a href="development.html">development</a>
+              </li>
+              <li class="nav-link">
+                <a href="contact.html">contact</a>
+              </li>
+            </ul>
+
+            <i class="fas fa-arrow-up nav-close"></i>
+          </div>
+        </nav>
+      </nav>
+
+      <main class="section" id="about-main">
+        <div class="about-info">
+          <div>
+            <h1 class="title">MATEO JACQUES</h1>
+            <p>
+              I am a self-taught <b>Front End Web Developer</b> and
+              <b>Web Designer</b> since 2019. I've been coding since I was 13,
+              but by that time I've already had set up quite a few websites.
+            </p>
+
+            <p>
+              I have a passion for <b>writing clean and concise code</b> that,
+              in conjuction with a
+              <b>good understanding of web design principles</b>, allows me to
+              create work that I'm proud of.
+            </p>
+
+            <p>I <b>always</b> keep learning (and <b>always</b> will).</p>
+          </div>
+          <img src="img/profile.png" alt="Mateo Jacques" />
+        </div>
+
+        <a class="read-more" onclick="smoothScroll(more)"
+          ><i class="fas fa-chevron-down"></i
+        ></a>
+      </main>
+
+      <section class="section" id="more">
+        <div class="about-item">
+          <i class="fas fa-arrow-circle-down"></i>
+          <h3>SKILLS</h3>
+        </div>
+
+        <div class="item-info">
+          <div>
+            <h4>PROGRAMMING LANGUAGES</h4>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JAVASCRIPT</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4>FRAMEWORKS AND LIBRARIES</h4>
+            <ul>
+              <li>SASS</li>
+              <li>GSAP</li>
+              <li>BOOTSTRAP</li>
+            </ul>
+          </div>
+          <div>
+            <h4>DESIGN TOOLS</h4>
+            <ul>
+              <li>ADOBE XD</li>
+              <li>ADOBE PHOTOSHOP</li>
+              <li>FIGMA</li>
+              <li>ILLUSTRATOR</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="about-item">
+          <i class="fas fa-arrow-circle-down"></i>
+          <h3>GOALS</h3>
+        </div>
+
+        <div class="item-info">
+          <p>
+            My main goal is to keep learning, becoming a better
+            designer/developer every day, so I can do what I love for work.
+            Along the way, I hope making friends, and appeal to my coworkers as
+            a nice, trustworthy colleague. I also aim for receiving advice and
+            learning from the people that have more experience in the field.
+          </p>
+        </div>
+      </section>
+
+      <footer id="footer">
+        <div class="contact-links">
+          <a href="https://github.com/mateojacques" target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a href="https://linkedin.com/in/mateoleonjacques" target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a href="https://facebook.com/mateojacques.dev" target="_blank"
+            ><i class="fab fa-facebook"></i
+          ></a>
+          <a href="https://instagram.com/mateojacquesweb" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </div>
+
+        <a href="/"><h4>.mateojacquesweb</h4></a>
+      </footer>
+    </div>
+
+    <script src="js/scroll.js"></script>
+    <script src="js/dropdown.js"></script>
+    <script src="js/mobile-menu.js"></script>
+  </body>
+</html>
