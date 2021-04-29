@@ -2,3 +2,4 @@
 function smoothScroll(section) {
     section.scrollIntoView({ behavior: "smooth" });
   }
+
