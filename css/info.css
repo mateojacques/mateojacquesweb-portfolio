@@ -303,6 +303,10 @@
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
   }
+  #design-main p, #development-main p {
+    font-size: 1.2rem;
+    margin-bottom: 50px;
+  }
 }
 
 @media screen and (max-width: 1024px) {
